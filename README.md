@@ -19,6 +19,8 @@ Executar o projeto:
 1. Em "API" copiei o código e colei/importei no `app.module.ts` para fazer o uso do Toolbar
 2. O código foi adicionado no arquivo `app.component.html`
 
+- [Lazy Loading](https://angular.io/guide/lazy-loading-ngmodules)
+
 ## Extensões - Visual Studio Code
 - Angular Extension Pack - Loiane Groner
 
@@ -94,4 +96,14 @@ Rotas global
 Significa que a rota irá carregar sem considerar a porta localhost:
 ```
 pathMatch: 'full'
+```
+
+Para adicionar um módulo filho, usamos o Lazy Loading:
+```
+const routes: Routes = [
+  {
+    path: 'nomedocaminhoquevocequercriar',
+    loadChildren: () => import('./nomedomodulo/nomedomodulo.module').then(m => m.NomeDoModulo)
+  }
+];
 ```
