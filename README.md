@@ -20,7 +20,7 @@ Executar o projeto:
 2. O código foi adicionado no arquivo `app.component.html`
 
 - [Lazy Loading](https://angular.io/guide/lazy-loading-ngmodules)
-- [Paleta de cores](https://materialui.co/colors/)
+- [Paleta de cores](https://material.io/design/color/the-color-system.html#tools-for-picking-colors)
 - [Criar paleta de cores personalizada](https://material.angular.io/guide/theming)
 
 ## Extensões - Visual Studio Code
