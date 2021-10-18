@@ -22,6 +22,8 @@ Executar o projeto:
 - [Lazy Loading](https://angular.io/guide/lazy-loading-ngmodules)
 - [Paleta de cores](https://material.io/design/color/the-color-system.html#tools-for-picking-colors)
 - [Criar paleta de cores personalizada](https://material.angular.io/guide/theming)
+- [Table](https://material.angular.io/components/table/overview)
+- [Card](https://material.angular.io/components/card/overview)
 
 ## Extensões - Visual Studio Code
 - Angular Extension Pack - Loiane Groner
@@ -58,6 +60,9 @@ Criar o módulo sem o roteamento:
 
 Criar um componente dentro de um módulo:
 >ng g c nomedomodulo/nomedocomponente
+
+Criar uma interface dentro de um módulo:
+>ng g interface nomedomodulo/diretorioquequercriardentro/nomedainterface
 
 ## Entendendo o código
 ### package.json
@@ -126,4 +131,21 @@ const routes: Routes = [
 Faz o redirecionamento da rota do módulo:
 ```
 <router-outlet></router-outlet>
+```
+### course.ts
+Só faz referência ao tipo, então "string" é em minúsculo
+```
+export interface Course {
+  _id: string;
+  name: string;
+  category: string;
+}
+```
+
+### courses.component.html
+Apresenta a tabela de cursos, os dados do arquivo `course.ts` foram utilizados
+
+É um código Card do Angular Material, que envolveu toda a tabela:
+```
+<mat-card></mat-card>
 ```
