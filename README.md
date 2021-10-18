@@ -20,6 +20,8 @@ Executar o projeto:
 2. O código foi adicionado no arquivo `app.component.html`
 
 - [Lazy Loading](https://angular.io/guide/lazy-loading-ngmodules)
+- [Paleta de cores](https://materialui.co/colors/)
+- [Criar paleta de cores personalizada](https://material.angular.io/guide/theming)
 
 ## Extensões - Visual Studio Code
 - Angular Extension Pack - Loiane Groner
@@ -79,7 +81,19 @@ São os navegadores que vão conseguir carregar o projeto
 Local para utilizar o Jasmine e o Karma
 
 ### styles.scss
-Estilos globais
+Estilos globais, como paleta de cor 
+```
+@import '@angular/material/theming';
+@include mat-core();
+
+$custom-app-primary: mat-palette($mat-blue);
+$custom-app-secondary: mat-palette($mat-indigo, A200, A400, 700);
+$custom-app-warn: mat-palette($mat-red);
+
+$custom-theme: mat-light-theme($custom-app-primary, $custom-app-secondary,  $custom-app-warn);
+
+@include angular-material-theme($custom-theme);
+```
 
 ### polyfills.ts
 Suporte para navegadores mais antigos
