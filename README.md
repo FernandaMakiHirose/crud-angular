@@ -11,8 +11,8 @@ Executar o projeto:
 >ng serve
 
 ## Organizar os imports do app.module.ts
-- No Visual Studio Code > View > Command Pallete > TS Hero: Organize imports (sort and remove unused)
-1. Irá adicionar boas práticas e deixa os imports em ordem alfabética
+1. No Visual Studio Code > View > Command Pallete > TS Hero: Organize imports (sort and remove unused)
+1.2 Irá adicionar boas práticas e deixa os imports em ordem alfabética
 
 ## Angular Material
 - [Toolbar](https://v7.material.angular.io/components/toolbar/overview)
@@ -46,6 +46,15 @@ Instalar o Angular Material:
 3. Set up global Angular Material typography styles? Yes
 4. Set up browser animations for Angular Material? Yes
 
+Criar o módulo e roteamento:
+>ng g m nomedomodulo --routing
+
+Criar o módulo sem o roteamento:
+>ng g m nomedomodulo
+
+Criar um componente dentro de um módulo:
+>ng g c nomedomodulo/nomedocomponente
+
 ## Entendendo o código
 ### package.json
 Todas as dependências e bibliotecas usadas estão no arquivo. As bibliotecas estão em `devDependencies`, elas são usadas apenas no momento de desenvolvimento do projeto 
@@ -75,3 +84,14 @@ Suporte para navegadores mais antigos
 
 ### environments
 Configuração de desenvolvimento e produção
+
+### componente-routing.module.ts
+Rotas do componente
+
+### app-routing.module.ts
+Rotas global
+
+Significa que a rota irá carregar sem considerar a porta localhost:
+```
+pathMatch: 'full'
+```
