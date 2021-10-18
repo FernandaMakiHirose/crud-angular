@@ -64,6 +64,9 @@ Criar um componente dentro de um módulo:
 Criar uma interface dentro de um módulo:
 >ng g interface nomedomodulo/diretorioquequercriardentro/nomedainterface
 
+Criar o serviço:
+>ng g s courses nomedomodulo/diretorioquequercriardentro/nomedoserviço
+
 ## Entendendo o código
 ### package.json
 Todas as dependências e bibliotecas usadas estão no arquivo. As bibliotecas estão em `devDependencies`, elas são usadas apenas no momento de desenvolvimento do projeto 
@@ -149,3 +152,6 @@ Apresenta a tabela de cursos, os dados do arquivo `course.ts` foram utilizados
 ```
 <mat-card></mat-card>
 ```
+
+### shared
+Apresenta todos os módulos do Angular Material, no arquivo `courses.module.ts` é necessário apenas importar o "AppMaterialModule"
