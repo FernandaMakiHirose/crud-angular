@@ -10,7 +10,16 @@ Abra o seu projeto no terminal:
 Executar o projeto:
 >ng serve
 
-## Extensões - Visual Studio
+## Organizar os imports do app.module.ts
+- No Visual Studio Code > View > Command Pallete > TS Hero: Organize imports (sort and remove unused)
+1. Irá adicionar boas práticas e deixa os imports em ordem alfabética
+
+## Angular Material
+- [Toolbar](https://v7.material.angular.io/components/toolbar/overview)
+1. Em "API" copiei o código e colei/importei no `app.module.ts` para fazer o uso do Toolbar
+2. O código foi adicionado no arquivo `app.component.html`
+
+## Extensões - Visual Studio Code
 - Angular Extension Pack - Loiane Groner
 
 ## Comandos
