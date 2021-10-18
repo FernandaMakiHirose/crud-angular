@@ -107,3 +107,9 @@ const routes: Routes = [
   }
 ];
 ```
+
+### app.component.html
+Faz o redirecionamento da rota do módulo:
+```
+<router-outlet></router-outlet>
+```
