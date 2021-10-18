@@ -27,8 +27,8 @@ Criação do projeto Angular:
 2. SCSS
 
 ## Dicas
-`package.json`: Todas as dependências e bibliotecas usadas estão no arquivo. As bibliotecas estão em `devDependencies` no arquivo `package.json`, elas são usadas apenas no momento de desenvolvimento do projeto
-`angular.json`: 
+`package.json`: Todas as dependências e bibliotecas usadas estão no arquivo. As bibliotecas estão em `devDependencies` no arquivo `package.json`, elas são usadas apenas no momento de desenvolvimento do projeto <br>
+`angular.json`: <br>
 É uma forma de definir inicializar as variáveis
 ```
 "strict": true
